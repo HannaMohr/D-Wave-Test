@@ -4,9 +4,11 @@ from dwave.cloud.config import load_config
 
 #print(get_configfile_paths())
 
-config = load_config('./dwave.conf')
+path = './config/dwave.conf'
+
+config = load_config(path)
 print(config)
 
-client = Client().from_config('./dwave.conf')
+#client = Client().from_config(path)
 #sample code
-client.close
+#client.close
